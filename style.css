@@ -1,0 +1,103 @@
+body {
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: tomato;
+    width: 450px;
+    height: 600px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: solid tomato 1px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+}
+
+.digit-field {
+    width: 100%;
+    border: solid 1px saddlebrown;
+}
+
+.all-btns>* {
+    padding: 0;
+    margin: 0;
+}
+
+.all-btns {
+    display: grid;
+    border: solid 1px greenyellow;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "num-btns functions"
+        "aux-btns functions"
+    ;
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 4fr 1fr;
+}
+
+.functions {
+    grid-area: functions;
+    display: grid;
+    place-items: center;
+    border: 1px solid salmon;
+    grid-template-rows: repeat(5, 1fr);
+
+}
+
+.func-btn {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    border: solid salmon 1px;
+}
+
+
+.num-btns {
+    padding: 0;
+    margin: 0;
+    grid-area: num-btns;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid salmon;
+}
+
+.num-btn {
+    display: grid;
+    place-items: center;
+    border: solid purple 1px;
+}
+
+.aux-btns {
+    grid-area: aux-btns;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    border: 1px solid salmon;
+    place-items: center;
+}
+
+.aux-btn {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border: solid 1px salmon;
+}
