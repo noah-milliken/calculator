@@ -12,34 +12,34 @@
 <body>
     <main>
         <div class="calculator">
-            <div class="digit-field">
-                <h1>12345</h1>
+            <div class="display-container">
+                <h1 id="display"> </h1>
             </div>
             <div class="all-btns">
-                <ul class="functions">
-                    <li class="func-btn">./.</li>
-                    <li class="func-btn">X</li>
-                    <li class="func-btn">-</li>
-                    <li class="func-btn">+</li>
-                    <li class="func-btn">=</li>
-                </ul>
-                <ol class="num-btns">
-                    <li class="num-btn" id="7">7</li>
-                    <li class="num-btn" id="8">8</li>
-                    <li class="num-btn" id="9">9</li>
-                    <li class="num-btn" id="4">4</li>
-                    <li class="num-btn" id="5">5</li>
-                    <li class="num-btn" id="6">6</li>
-                    <li class="num-btn" id="1">1</li>
-                    <li class="num-btn" id="2">2</li>
-                    <li class="num-btn" id="3">3</li>
-                </ol>
-                <ul class="aux-btns">
-                    <li class="aux-btn aux-btn">0</li>
-                    <li class="aux-btn decimal-btn">.</li>
-                    <li class="aux-btn cear-btn">clear</li>
-                    <li class="aux-btn del btn">Del</li>
-                </ul>
+                <div class="functions">
+                    <button class="num-btn func-btn" id=" + " value=" + ">+</button>
+                    <button class="num-btn func-btn" id=" - " value=" - ">-</button>
+                    <button class="num-btn func-btn" id=" * " value=" * ">X</button>
+                    <button class="num-btn func-btn" id=" / " value=" / ">/</button>
+                    <button class="func-btn" id="equals">=</button>
+                </div>
+                <div class="num-btns">
+                    <button class="num-btn" id="7" value="7">7</button>
+                    <button class="num-btn" id="8" value="8">8</button>
+                    <button class="num-btn" id="9" value="9">9</button>
+                    <button class="num-btn" id="4" value="4">4</button>
+                    <button class="num-btn" id="5" value="5">5</button>
+                    <button class="num-btn" id="6" value="6">6</button>
+                    <button class="num-btn" id="1" value="1">1</button>
+                    <button class="num-btn" id="2" value="2">2</button>
+                    <button class="num-btn" id="3" value="3">3</button>
+                </div>
+                <div class="aux-btns">
+                    <button class="num-btn aux-btn aux-btn " id="0">0</button>
+                    <button class="aux-btn decimal-btn">.</button>
+                    <button class="aux-btn cear-btn">clear</button>
+                    <button class="aux-btn del-btn" id="del-btn">Del</button>
+                </div>
             </div>
         </div>
     </main>
